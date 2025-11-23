@@ -720,16 +720,7 @@ hr {
    margin: 0 0 15px;
 }
 
-.btn-accion {
-   width: 100%;
-   padding: 10px;
-   border-radius: 25px;
-   font-weight: bold;
-   cursor: pointer;
-   border: none;
-   color: white;
-   transition: background 0.3s;
-}
+
 
 .btn-gris {
    background: #ccc;
