@@ -1,0 +1,44 @@
+:root {
+    --color-principal: #3498DB;
+    --color-secundario: #2ECC71;
+    --color-acento: #E67E22;
+    --color-alerta: #e62222;
+    --color-fondo-claro: #ECF0F1;
+    --color-fondo-base: #FFFFFF;
+    --color-fondo-oscuro: #707070;
+    --color-texto-oscuro: #34495E;
+    --color-texto-secundario: #757575;
+    --color-texto-claro: #FFFFFF;
+    --tipografia-principal: 'Roboto', sans-serif;
+    --tipografia-mediana: 24px;
+    --tipografia-grande: 32px;
+    --borde-radio-small: 4px;
+    --borde-radio-medium: 10px;
+    --borde-radio-circle: 50%;
+}
+
+body {
+    margin: 0;
+    font-family: var(--tipografia-principal);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-fondo-claro);
+}
+
+/*Login*/
+.cajaLogo { display: flex; align-items: center; gap: 15px; justify-content: center; margin-bottom: 30px;}
+.cajaLogo i { font-weight: bold; color: var(--color-principal); }
+.cajaLogo h2 { margin: 0; font-size: var(--tipografia-grande); color: var(--color-principal);}
+
+.btn { padding: 12px 24px; border: none; border-radius: var(--borde-radio-small); font-weight: bold; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: background 0.3s; }
+.btn-primary { background-color: var(--color-principal); color: white; width: 100%; justify-content: center; }
+.btn-primary:hover { background-color: #2980b9; }
+
+.form-container { background: var(--color-fondo-base); padding: 40px; border-radius: var(--borde-radio-medium); box-shadow: 0 4px 20px rgba(0,0,0,0.08); max-width: 450px; margin: auto; }
+#form-container-estilo { text-align: center; color: var(--color-texto-oscuro); margin-bottom: 25px;}
+.form-group { margin-bottom: 20px; }
+.form-group input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: var(--borde-radio-small); box-sizing: border-box; font-family: var(--tipografia-principal); font-size: 16px; background: #f9f9f9; }
+
+#datos-nueva-cuenta { text-align: center; margin-top: 20px; color: var(--color-texto-secundario);}
+#registar { color: var(--color-principal); font-weight: bold; }
