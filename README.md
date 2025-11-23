@@ -79,6 +79,6 @@ Actualmente, el proyecto se encuentra en fase de **Prototipado Frontend**.
 - Samira Arízaga: [github.com/marcianitauwu](https://github.com/marcianitauwu)  
 - Danna Morales: [github.com/DannaSarai](https://github.com/DannaSarai)  
 - Salma Morales: [github.com/Salmynj](https://github.com/Salmynj)  
-- Sebastian Sarastic: [github.com/SebSar1](https://github.com/SebSar1)  
+- Sebastian Sarasti: [github.com/SebSar1](https://github.com/SebSar1)  
 
 ---
