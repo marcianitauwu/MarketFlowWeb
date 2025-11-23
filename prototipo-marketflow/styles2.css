@@ -1022,3 +1022,51 @@ hr {
    color: var(--color-principal);
    font-weight: bold;
 }
+
+
+
+.form-container {
+   background: var(--color-fondo-base);
+   padding: 40px;
+   border-radius: var(--borde-radio-medium);
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+   max-width: 450px;
+   margin: auto;
+}
+
+#form-container-estilo {
+   text-align: center;
+   color: var(--color-texto-oscuro);
+   margin-bottom: 25px;
+}
+
+.form-group {
+   margin-bottom: 20px;
+}
+
+.form-group input {
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #ddd;
+   border-radius: var(--borde-radio-small);
+   box-sizing: border-box;
+   font-family: var(--tipografia-principal);
+   font-size: 16px;
+   background: #f9f9f9;
+}
+
+#datos {
+   text-align: center;
+   margin-top: 20px;
+   color: var(--color-texto-secundario);
+}
+
+#registrar {
+   color: var(--color-principal);
+   font-weight: bold;
+}
+
+#datos-estilo {
+   color: var(--color-principal);
+   font-weight: bold;
+}
