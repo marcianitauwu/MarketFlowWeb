@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a MarketFlow</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="cajaLogo">
+            <i class="fa-solid fa-handshake fa-2x"></i>
+            <h2>MarketFlow</h2>
+        </div>
+        <div class="cajaBarraBusqueda">
+            <input type="text" placeholder="🔍 Buscar productos, marcas...">
+        </div>
+        
+        <div class="cajaLoginRegistro">
+            <a href="login.html" class="btn-login">Iniciar Sesión</a>
+            <a href="register.html" class="btn-registro">Registrarse</a>
+        </div>
+    </header>
+
+    <div class="contenedor-principal">
+<aside>
+            <ul class="flexColumnaAside listaSinEstilo">
+                <li><a href="catalog.html"><i class="fa-solid fa-store"></i> Catálogo</a></li>
+                <li class="activo"><a href="my-products.html"><i class="fa-solid fa-box-open"></i> Mis Publicaciones</a>
+                </li>
+                <li><a href="chat.html"><i class="fa-solid fa-comments"></i> Mensajes</a></li>
+            </ul>
+        </aside>
+
+        <div class="cajaContenidoPrincipal">
+            <h1>Catálogo de Productos</h1>
+            
+            <div class="filtros-container">
+                <button class="btn btn-primary btn-pill">Category</button>
+                <button class="btn btn-white btn-pill">Price Range</button>
+                <button class="btn btn-white btn-pill">Brand</button>
+                 <button class="btn btn-secondary btn-pill ml-auto">Apply Filters</button>
+            </div>
+
+            <div class="grid-productos">
+                <div class="tarjeta-producto">
+                    <div class="imagen-container">
+                        <img src="imagenes/peraphone.jpg" alt="PearPhone XT">
+                        <span class="etiqueta-estado dispo">Nuevo</span>
+                         <i class="fa-regular fa-heart icon-fav"></i>
+                    </div>
+                    <div class="contenido-tarjeta">
+                        <h3 class="titulo">PearPhone XT</h3>
+                        <p class="precio">$999.00</p>
+                        <a href="product-detail.html" class="btn-accion btn-azul btn-block">Contact Seller</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <div class="imagen-container">
+                        <img src="imagenes/perfume.jpg" alt="Perfume">
+                        <span class="etiqueta-estado dispo">Nuevo</span>
+                        <i class="fa-regular fa-heart icon-fav"></i>
+                    </div>
+                    <div class="contenido-tarjeta">
+                        <h3 class="titulo">Perfume para hombre</h3>
+                        <p class="precio">$70.50</p>
+                        <a href="product-detail.html" class="btn-accion btn-azul btn-block">Contact Seller</a>
+                    </div>
+                </div>
+                
+                <div class="tarjeta-producto">
+                    <div class="imagen-container">
+                        <img src="imagenes/bicicleta.jpg" alt="Bicicleta">
+                        <span class="etiqueta-estado dispo">Usado</span>
+                        <i class="fa-regular fa-heart icon-fav"></i>
+                    </div>
+                    <div class="contenido-tarjeta">
+                        <h3 class="titulo">Bicicleta casi nueva</h3>
+                        <p class="precio">$85.00</p>
+                        <a href="product-detail.html" class="btn-accion btn-azul btn-block">Contact Seller</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <div class="imagen-container">
+                        <img src="imagenes/libro.jpg" alt="Libro">
+                        <span class="etiqueta-estado vendido">Vendido</span>
+                         <i class="fa-solid fa-heart icon-fav alerta"></i>
+                    </div>
+                    <div class="contenido-tarjeta">
+                        <h3 class="titulo">Libro "Cómo hablar con tu perro"</h3>
+                        <p class="precio">$35.00</p>
+                        <button class="btn-accion btn-gris btn-block" disabled>Vendido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
