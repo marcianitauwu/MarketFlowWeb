@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Producto - MarketFlow</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="cajaLogo">
+            <i class="fa-solid fa-handshake fa-2x"></i>
+            <h2>MarketFlow</h2>
+        </div>
+        <div class="cajaBarraBusqueda"><input type="text" placeholder="🔍 Buscar productos..."></div>
+        <div class="cajaPerfil">
+            <ul>
+                <li><img src="https://i.pravatar.cc/150?img=12" alt="Usuario"></li>
+                <li>
+                    <h3>Hola, Admin</h3>
+                </li>
+            </ul>
+        </div>
+        <a href="login.html" class="btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Salir</a>
+    </header>
+
+    <div class="contenedor-principal">
+        <aside>
+            <ul class="flexColumnaAside listaSinEstilo">
+                <li><a href="catalog.html"><i class="fa-solid fa-store"></i> Catálogo</a></li>
+                <li class="activo"><a href="my-products.html"><i class="fa-solid fa-box-open"></i> Mis Publicaciones</a>
+                </li>
+                <li><a href="chat.html"><i class="fa-solid fa-comments"></i> Mensajes</a></li>
+            </ul>
+        </aside>
+
+        <div class="cajaContenidoPrincipal">
+            <a href="catalog.html" class="btn-volver">
+                <i class="fa-solid fa-arrow-left"></i> Volver al Catálogo
+            </a>
+
+            <div class="detalle-flex">
+                <div class="detalle-imagen">
+                    <img src="images/dibujo.png" alt="Dibujo Artístico">
+                </div>
+                <div class="detalle-info">
+                    <div class="detalle-header">
+                        <h1 class="detalle-titulo">Dibujo Artístico Original</h1>
+                        <i class="fa-regular fa-heart fa-2x btn-favorito"></i>
+                    </div>
+                    <p class="detalle-precio">$120.50</p>
+
+                    <div class="detalle-meta">
+                        <span><i class="fa-solid fa-box"></i> Estado: <strong>Nuevo</strong></span>
+                        <span><i class="fa-solid fa-tag"></i> Categoría: <strong>Arte y Decoración</strong></span>
+                        <span><i class="fa-solid fa-calendar"></i> Publicado: <strong>Hoy</strong></span>
+                    </div>
+
+                    <div class="detalle-descripcion">
+                        <h3>Descripción</h3>
+                        <p>
+                            Obra original realizada con técnica mixta sobre papel de alta calidad. Dimensiones 50x70cm. Ideal para decorar cualquier espacio con un toque único y creativo. Se entrega con certificado de autenticidad.
+                        </p>
+                    </div>
+
+                    <div class="vendedor-info">
+                        <img src="https://i.pravatar.cc/150?img=32" class="vendedor-avatar" alt="Vendedor">
+                        <div class="vendedor-datos">
+                            <h4>Vendido por: Ana López Art</h4>
+                            <small><i class="fa-solid fa-star icono-estrella"></i> 5.0 (45 ventas)</small>
+                        </div>
+                        <a href="chat.html" class="btn btn-primary btn-contactar"><i class="fa-solid fa-comment"></i>
+                            Contactar Vendedor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

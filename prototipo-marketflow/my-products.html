@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Publicaciones - MarketFlow</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="alerta-futuro" class="alerta-futuro">
+        <i class="fa-solid fa-rocket"></i> Esta funcionalidad será implementada en el futuro.
+    </div>
+
+    <header>
+        <div class="cajaLogo">
+            <i class="fa-solid fa-handshake fa-2x"></i>
+            <h2>MarketFlow</h2>
+        </div>
+        <div class="cajaBarraBusqueda"><input type="text" placeholder="🔍 Buscar productos..."></div>
+        <div class="cajaPerfil">
+            <ul>
+                <li><img src=""></li>
+                <li>
+                    <h3>Hola, Admin</h3>
+                </li>
+            </ul>
+        </div>
+        <a href="login.html" class="btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Salir</a>
+        </div>
+    </header>
+
+    <div class="contenedor-principal">
+        <aside>
+            <ul class="flexColumnaAside listaSinEstilo">
+                <li><a href="catalog.html"><i class="fa-solid fa-store"></i> Catálogo</a></li>
+                <li class="activo"><a href="my-products.html"><i class="fa-solid fa-box-open"></i> Mis Publicaciones</a>
+                </li>
+                <li><a href="chat.html"><i class="fa-solid fa-comments"></i> Mensajes</a></li>
+            </ul>
+        </aside>
+
+        <div class="cajaContenidoPrincipal">
+            <div class="cajaMisPublicaciones">
+                <h1>Mis Publicaciones</h1>
+                <a href="create-product.html" class="btn btn-secondary"><i class="fa-solid fa-plus"></i> Nueva
+                    Publicación</a>
+            </div>
+
+            <div class="grid-productos">
+                <div class="tarjeta-producto">
+                    <div class="imagen-container">
+                        <img src="images/iphone.png" alt="Iphone">
+
+                    </div>
+                    <div class="contenido-tarjeta">
+                        <h3 class="titulo">Smartphone Pro X</h3>
+                        <p class="precio">$999.00</p>
+                        <div class="btnsProducto">
+                            <button onclick="mostrarAlerta()" class="btn-accion btn-azul"><i
+                                    class="fa-solid fa-pen"></i> Editar</button>
+                            <button onclick="mostrarAlerta()" class="btn-accion btn-rojo">
+                                <i class="fa-solid fa-trash"></i>
+                                Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-producto">
+                    <div class="imagen-container">
+                        <img src="images/sandalias.png" alt="sandalias">
+
+                    </div>
+                    <div class="contenido-tarjeta">
+                        <h3 class="titulo">Zapatos de Correr</h3>
+                        <p class="precio">$120.50</p>
+                        <div class="btnsProducto">
+                            <button onclick="mostrarAlerta()" class="btn-accion btn-azul"><i
+                                    class="fa-solid fa-pen"></i> Editar</button>
+                            <button onclick="mostrarAlerta()" class="btn-accion btn-rojo"><i
+                                    class="fa-solid fa-trash"></i>
+                                Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-producto">
+                    <div class="imagen-container">
+                        <img src="images/fnaf.png" alt="Disfraz de Freddy">
+
+                    </div>
+                    <div class="contenido-tarjeta">
+                        <h3 class="titulo">Disfraz de Freddy</h3>
+                        <p class="precio">$120.50</p>
+                        <div class="btnsProducto">
+                            <button onclick="mostrarAlerta()" class="btn-accion btn-azul"><i
+                                    class="fa-solid fa-pen"></i> Editar</button>
+                            <button onclick="mostrarAlerta()" class="btn-accion btn-rojo"><i
+                                    class="fa-solid fa-trash"></i>
+                                Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-producto">
+                    <div class="imagen-container">
+                        <img src="images/roblox.png" alt="Muneco de Roblox">
+
+                    </div>
+                    <div class="contenido-tarjeta">
+                        <h3 class="titulo">Muneco de Roblox</h3>
+                        <p class="precio">$120.50</p>
+                        <div class="btnsProducto">
+                            <button onclick="mostrarAlerta()" class="btn-accion btn-azul"><i
+                                    class="fa-solid fa-pen"></i> Editar</button>
+                            <button onclick="mostrarAlerta()" class="btn-accion btn-rojo"><i
+                                    class="fa-solid fa-trash"></i>
+                                Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-producto">
+                    <div class="imagen-container">
+                        <img src="images/dibujo.png" alt="Dibujo Artístico">
+
+                    </div>
+                    <div class="contenido-tarjeta">
+                        <h3 class="titulo">Dibujo Artístico</h3>
+                        <p class="precio">$120.50</p>
+                        <div class="btnsProducto">
+                            <button onclick="mostrarAlerta()" class="btn-accion btn-azul"><i
+                                    class="fa-solid fa-pen"></i> Editar</button>
+                            <button onclick="mostrarAlerta()" class="btn-accion btn-rojo"><i
+                                    class="fa-solid fa-trash"></i>
+                                Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-producto">
+                    <div class="imagen-container">
+                        <img src="images/figura.png" alt="Figura Coleccionable">
+
+                    </div>
+                    <div class="contenido-tarjeta">
+                        <h3 class="titulo">Figura Coleccionable</h3>
+                        <p class="precio">$120.50</p>
+                        <div class="btnsProducto">
+                            <button onclick="mostrarAlerta()" class="btn-accion btn-azul"><i
+                                    class="fa-solid fa-pen"></i> Editar</button>
+                            <button onclick="mostrarAlerta()" class="btn-accion btn-rojo"><i
+                                    class="fa-solid fa-trash"></i>
+                                Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function mostrarAlerta() {
+            const alerta = document.getElementById('alerta-futuro');
+            alerta.style.display = 'block';
+            setTimeout(() => { alerta.style.display = 'none'; }, 3000);
+        }
+    </script>
+</body>
+
+</html>
