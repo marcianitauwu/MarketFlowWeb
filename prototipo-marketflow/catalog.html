@@ -35,12 +35,40 @@
         <div class="cajaContenidoPrincipal">
             <h1>Catálogo de Productos</h1>
 
-            <div class="filtros-container">
-                <button class="btn btn-primary btn-pill">Category</button>
-                <button class="btn btn-white btn-pill">Price Range</button>
-                <button class="btn btn-white btn-pill">Brand</button>
-                <button class="btn btn-secondary btn-pill ml-auto">Apply Filters</button>
-            </div>
+           <div class="filtros-container">
+    
+    <div class="caja-filtro">
+        <select class="select-boton estilo-azul">
+            <option selected disabled>Categoría</option>
+            <option>Electrónica</option>
+            <option>Hogar</option>
+            <option>Deportes</option>
+        </select>
+        <i class="fa-solid fa-chevron-down icono-flecha texto-blanco"></i>
+    </div>
+
+    <div class="caja-filtro">
+        <select class="select-boton">
+            <option selected disabled>Rango de Precio</option>
+            <option>$0 - $50</option>
+            <option>$50 - $100</option>
+            <option>+$100</option>
+        </select>
+        <i class="fa-solid fa-chevron-down icono-flecha"></i>
+    </div>
+
+    <div class="caja-filtro">
+        <select class="select-boton">
+            <option selected disabled>Estado</option>
+            <option>Nuevo</option>
+            <option>Usado</option>
+        </select>
+        <i class="fa-solid fa-chevron-down icono-flecha"></i>
+    </div>
+
+    <button class="btn btn-secondary btn-pill ml-auto">Aplicar Filtros</button>
+
+    </div>
 
             <div class="grid-productos">
                 

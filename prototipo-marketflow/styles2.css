@@ -155,6 +155,44 @@ aside a:hover {
    background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Caja de filtros */
+
+.caja-filtro {
+   position: relative;
+   display: inline-block;
+   margin-right: 10px;
+}
+.select-boton {
+   appearance: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   padding: 12px 30px;
+   border: none;
+   border-radius: var(--borde-radio-small);
+   font-weight: bold;
+   cursor: pointer;
+   text-decoration: none;
+   display: inline-flex;
+   align-items: center;
+   gap: 8px;
+   transition: background 0.3s;
+}
+.estilo-azul {
+   background-color: var(--color-principal);
+   color: white;
+   border: none;
+}
+
+.icono-flecha {
+   position: absolute;
+   right: 15px;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 12px;
+   pointer-events: none; 
+   color: #666;
+}
+
 /* =========================================
    5. ELEMENTOS GENERALES Y UTILIDADES
 ========================================= */
