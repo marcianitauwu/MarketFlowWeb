@@ -31,7 +31,7 @@ El proyecto es un prototipo estático enfocado en la estructura (HTML) y el dise
 Este proyecto no utiliza librerías complejas ni backend, se basa puramente en:
 
 * **HTML5:** Para la estructura semántica de todas las páginas.
-* **CSS3:** Para el diseño, colores, tipografía y maquetación (Grid y Flexbox).
+* **CSS3:** Para el diseño, colores, tipografía (Grid y Flexbox).
 * **FontAwesome:** Para los iconos de la interfaz.
 
 ---
@@ -55,7 +55,7 @@ Este proyecto es estático, por lo que no requiere instalación de dependencias 
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/marcianitauwu/MarketFlowWeb.git](https://github.com/marcianitauwu/MarketFlowWeb.git)
+    git clone https://github.com/marcianitauwu/MarketFlowWeb.git
     ```
 
 2.  **Abrir el proyecto:**
