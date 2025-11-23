@@ -1,0 +1,208 @@
+/* styles2.css */
+:root {
+    --color-principal: #3498DB;
+    --color-secundario: #2ECC71;
+    --color-acento: #E67E22;
+    --tipografia-principal: 'Roboto', sans-serif;
+    --borde-radio-small: 4px;
+    --borde-radio-medium: 10px;
+    --borde-radio-circle: 50%;
+}
+
+/* LAYOUT PRINCIPAL CORREGIDO */
+body {
+    margin: 0;
+    font-family: var(--tipografia-principal);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-fondo-claro);
+}
+
+header {
+    background-color: var(--color-fondo-base);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 30px;
+    border-bottom: 1px solid #ddd;
+    flex-shrink: 0;
+}
+
+/* Contenedor flex para Sidebar y Contenido */
+.contenedor-principal {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 80px); /* Altura restante */
+    overflow: hidden;
+}
+
+aside {
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-texto-claro);
+    height: 100%; /* Ocupa el alto del contenedor padre */
+    width: 300px;
+    font-size: var(--tipografia-mediana);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    overflow-y: auto;
+}
+
+/* ESTILOS COMPONENTES */
+aside a {
+    text-decoration: none; 
+    color: var(--color-texto-claro); 
+    display: flex; align-items: center; 
+    gap: 10px; padding: 15px 20px;
+    transition: background 0.3s; 
+    border-radius: var(--borde-radio-small);
+}
+
+.listaSinEstilo { list-style: none; }
+.cajaLogo { display: flex; align-items: center; gap: 15px; }
+.cajaLogo h2 { margin: 0; font-size: var(--tipografia-grande); color: var(--color-principal); font-weight: bold; }
+.cajaBarraBusqueda input { color: var(--color-texto-oscuro); width: 400px; height: 45px; border: 1px solid #ddd; border-radius: 25px; padding-left: 20px; font-size: 16px; background: #f9f9f9; }
+.cajaPerfil ul { display: flex; align-items: center; gap: 15px; list-style: none; margin: 0; padding: 0; }
+.cajaPerfil img { width: 45px; height: 45px; border-radius: var(--borde-radio-circle); background: #ddd; }
+.cajaPerfil h3 { font-size: 18px; margin: 0; color: var(--color-texto-oscuro); }
+.btn-logout { text-decoration: none; color: var(--color-alerta); font-weight: bold; margin-left: 30px; display: flex; align-items: center; gap: 5px; }
+
+
+.btn { padding: 12px 24px; border: none; border-radius: var(--borde-radio-small); font-weight: bold; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: background 0.3s; }
+.btn-primary { background-color: var(--color-principal); color: white; }
+.btn-primary:hover { background-color: #2980b9; }
+
+
+
+
+
+
+/*-----------------------------------------*/ 
+/*MENSAJES*/
+/*-----------------------------------------*/ 
+
+/* Chat */
+.chat-container { display: flex; height: 600px; background: white; border-radius: var(--borde-radio-medium); overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border: 1px solid #eee; }
+.chat-sidebar { width: 320px; border-right: 1px solid #eee; overflow-y: auto; background: #fcfcfc; }
+.chat-item { padding: 15px 20px; border-bottom: 1px solid #eee; cursor: pointer; transition: background 0.2s; display: flex; align-items: center; gap: 15px; }
+.chat-item:hover, .chat-item.activo { background: #f0f2f5; }
+.chat-avatar { width: 40px; height: 40px; border-radius: 50%; background: #ddd; }
+.chat-main { flex: 1; display: flex; flex-direction: column; }
+.chat-header { padding: 15px 20px; border-bottom: 1px solid #eee; font-weight: bold; background: white; display: flex; align-items: center; gap: 10px; }
+.chat-messages { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; background: #e5ddd5; }
+.message { max-width: 70%; padding: 10px 14px; border-radius: 18px; position: relative; font-size: 15px; line-height: 1.4; }
+.message.recibido { align-self: flex-start; background: white; border-bottom-left-radius: 4px; }
+.message.enviado { align-self: flex-end; background: #dcf8c6; border-bottom-right-radius: 4px; }
+.message-time { font-size: 11px; text-align: right; margin-top: 4px; opacity: 0.6; }
+.chat-input-area { padding: 10px; border-top: 1px solid #eee; display: flex; gap: 10px; background: #f0f2f5; align-items: center; }
+.chat-input-area textarea { flex: 1; padding: 12px; border: none; border-radius: 20px; resize: none; background: white; height: 20px; }
+
+
+/* Alertas de "Función a Futuro" */
+.alerta-futuro {
+    display: none; /* Oculto por defecto */
+    position: fixed; 
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    background-color: var(--color-acento); 
+    color: white; 
+    padding: 15px 30px;
+    border-radius: 50px; 
+    font-weight: bold; 
+}
+
+.cajaSalir{
+    display: flex; 
+    align-items: center;
+}
+.cajaContenidoPrincipal{ 
+    padding: 0; 
+    display: flex; 
+    flex-direction: column;
+    background-color: #f0f2f5;
+}
+.chats{
+    padding: 15px; 
+    font-weight: bold; 
+    font-size: 18px; 
+    border-bottom: 1px solid #eee; 
+    background: white;
+}
+.chat-container{ 
+    height: 100%; 
+    border: none; 
+    border-radius: 0;
+}
+.letras-Chat-activo{
+    display: block; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    width: 180px;
+}
+.letras-Chat{
+    display: block;
+}
+.chat-avatar{
+    width: 35px;
+    height: 35px;
+}
+.letras-Chat-Linea{
+    color: var(--color-secundario); 
+    font-weight: normal;
+}
+
+.fa-solid fa-ellipsis-vertical{
+    margin-left: auto; 
+    color: #999; 
+    cursor: pointer;
+}
+.chat-mensajes-fecha{
+   
+   background: #e1e1e1; 
+   padding: 5px 10px; 
+   border-radius: 10px;
+}
+.chat-mensajes-fecha small{
+   background: #e1e1e1; 
+   padding: 5px 10px; 
+   border-radius: 10px;
+}
+
+.btn.btn-primary{
+   border-radius: 50%; 
+   width: 45px; 
+   height: 45px; 
+   padding: 0; 
+   display: flex; 
+   align-items: center; 
+   justify-content: center;
+}
+/*EMOJIES*/
+
+.hand-shake{
+    color: var(--color-principal);
+}
+.ellipsis-vertical{
+    margin-left: auto; 
+    color: #999; 
+    cursor: pointer;
+}
+.cara-sonriente{
+    color: #999; 
+    font-size: 20px; 
+    cursor: pointer;
+}
+.clip-papel{
+    color: #999; 
+    font-size: 20px; 
+    cursor: pointer;
+}
+.avion-papel{
+    color: #999;
+}
