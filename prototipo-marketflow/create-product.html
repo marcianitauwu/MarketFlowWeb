@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Producto - MarketFlow</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="alerta-futuro" class="alerta-futuro">
+        <i class="fa-solid fa-rocket"></i> Esta funcionalidad será implementada en el futuro.
+    </div>
+
+    <header>
+        <div class="cajaLogo">
+            <i class="fa-solid fa-handshake fa-2x"></i>
+            <h2>MarketFlow</h2>
+        </div>
+        <div class="cajaBarraBusqueda"><input type="text" placeholder="🔍 Buscar productos..."></div>
+        <div class="cajaPerfil">
+            <ul>
+                <li><img src="https://i.pravatar.cc/150?img=12" alt="Usuario"></li>
+                <li>
+                    <h3>Hola, Admin</h3>
+                </li>
+            </ul>
+        </div>
+        <a href="login.html" class="btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Salir</a>
+    </header>
+
+    <div class="contenedor-principal">
+        <aside>
+            <ul class="flexColumnaAside listaSinEstilo">
+                <li><a href="catalog.html"><i class="fa-solid fa-store"></i> Catálogo</a></li>
+                <li><a href="my-products.html"><i class="fa-solid fa-box-open"></i> Mis Publicaciones</a>
+                </li>
+                <li><a href="chat.html"><i class="fa-solid fa-comments"></i> Mensajes</a></li>
+            </ul>
+        </aside>
+
+        <div class="cajaContenidoPrincipal">
+            <h1 class="titulo-pagina">Publicar Nuevo Producto</h1>
+
+            <div class="form-container-largo">
+                <form>
+                    <div class="form-flex-row">
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label>Título del Producto</label>
+                                <input type="text" placeholder="Ej: Bicicleta de montaña...">
+                            </div>
+                            <div class="form-group">
+                                <label>Precio ($)</label>
+                                <input type="number" placeholder="Ej: 150.00">
+                            </div>
+                            <div class="form-flex-row gap-small">
+                                <div class="form-group form-col">
+                                    <label>Categoría</label>
+                                    <select>
+                                        <option>Electrónica</option>
+                                        <option>Hogar</option>
+                                        <option>Deportes</option>
+                                    </select>
+                                </div>
+                                <div class="form-group form-col">
+                                    <label>Estado</label>
+                                    <select>
+                                        <option>Nuevo</option>
+                                        <option>Usado</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label>Descripción</label>
+                                <textarea placeholder="Detalles del producto, estado, motivo de venta..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Imagen Principal</label>
+                                <div class="upload-box">
+                                    <i class="fa-solid fa-cloud-arrow-up fa-2x"></i>
+                                    <span>Haz clic para subir imagen</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-footer">
+                        <a href="my-products.html" class="btn btn-gris">Cancelar</a>
+                        <button type="button" onclick="mostrarAlerta()" class="btn btn-secondary"><i
+                                class="fa-solid fa-check"></i> Publicar Ahora</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function mostrarAlerta() {
+            const alerta = document.getElementById('alerta-futuro');
+            alerta.style.display = 'flex'; // Usamos flex para alinear icono y texto
+            setTimeout(() => { alerta.style.display = 'none'; }, 3000);
+        }
+    </script>
+</body>
+
+</html>
