@@ -1,6 +1,6 @@
 # 🤝 MarketFlow Web
 
-**MarketFlow** es un prototipo de plataforma web tipo *Marketplace* diseñado para facilitar la compra y venta de productos de segunda mano y nuevos entre usuarios. Este repositorio contiene la maquetación e interfaz de usuario (Frontend) del sistema.
+**MarketFlow** es un prototipo de plataforma web tipo *Marketplace* diseñado para facilitar la compra y venta de productos de segunda mano y nuevos entre usuarios. Este repositorio contiene las interfaces de usuario del sistema.
 
 ---
 
