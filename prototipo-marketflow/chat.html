@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes - MarketFlow</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="alerta-futuro" class="alerta-futuro">
+          <i class="fa-solid fa-rocket"></i> ¡Ups! Esta funcionalidad será implementada en el futuro.
+    </div>
+
+    <header>
+        <div class="cajaLogo"><i class="fa-solid fa-handshake fa-2x hand-shake"></i> 
+            <h2>MarketFlow</h2>
+        </div>
+        <div class="cajaBarraBusqueda">
+            <input type="text" placeholder="🔍 Buscar productos...">
+        </div>
+        <div class="cajaSalir">
+            <div class="cajaPerfil">
+                <ul><li><img src="https://i.pravatar.cc/150?img=12"></li>
+                    <li><h3>Hola, Admin</h3></li>
+                </ul>
+            </div>
+            <a href="login.html" class="btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Salir</a>
+        </div>
+    </header>
+
+    <div class="contenedor-principal">
+        <aside>
+            <ul class="flexColumnaAside listaSinEstilo">
+                <li><a href="catalog.html"><i class="fa-solid fa-store"></i> Catálogo</a></li>
+                <li class="activo"><a href="my-products.html"><i class="fa-solid fa-box-open"></i> Mis Publicaciones</a>
+                </li>
+                <li><a href="chat.html"><i class="fa-solid fa-comments"></i> Mensajes</a></li>
+            </ul>
+        </aside>
+
+        <div class="cajaContenidoPrincipal">
+            
+            <div class="chat-container">
+                <div class="chat-sidebar">
+                    <div class="chats">Chats</div>
+                    <div class="chat-item activo">
+                        <img src="https://i.pravatar.cc/150?img=45" class="chat-avatar">
+                        <div>
+                            <b>TechMaster Store</b>
+                            <small class="letras-Chat-activo">Podría bajarlo un poco, ¿cuál es tu oferta?</small>
+                        </div>
+                    </div>
+                    <div class="chat-item">
+                        <img src="https://i.pravatar.cc/150?img=32" class="chat-avatar">
+                        <div>
+                            <b>Ana López</b>
+                            <small class="letras-Chat">Sobre: Zapatillas Orion...</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-main">
+                    <div class="chat-header">
+                        <img src="https://i.pravatar.cc/150?img=45" class="chat-avatar">
+                        <div>
+                            <div>TechMaster Store</div>
+                             <small class="letras-Chat-Linea">En línea</small>
+                        </div>
+                        <i class="fa-solid fa-ellipsis-vertical ellipsis-vertical"></i>
+                    </div>
+                    
+                    <div class="chat-messages">
+                        <div  class = "chat-mensajes-fecha"><small>Hoy</small></div>
+                        <div class="message recibido">
+                            Hola, ¿sigue disponible el Smartphone Pro X?
+                            <div class="message-time">10:30 AM</div>
+                        </div>
+                        <div class="message enviado">
+                            ¡Hola! Sí, todavía lo tengo. ¿Te interesa?
+                            <div class="message-time">10:32 AM</div>
+                        </div>
+                        <div class="message recibido">
+                            Sí, me gustaría saber si el precio es negociable.
+                            <div class="message-time">10:35 AM</div>
+                        </div>
+                         <div class="message enviado">
+                            Podría bajarlo un poco, ¿cuál es tu oferta?
+                            <div class="message-time">10:40 AM</div>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-area">
+                        <i class="fa-regular fa-face-smile cara-sonriente"></i>
+                        <i class="fa-solid fa-paperclip clip-papel"></i>
+                        <textarea placeholder="Escribe un mensaje..."></textarea>
+                        <a href="#alerta-futuro" class="btn btn-primary"> <i class="fa-solid fa-paper-plane avion-papel"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
