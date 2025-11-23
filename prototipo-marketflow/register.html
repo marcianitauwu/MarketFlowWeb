@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro MarketFlow</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="cajaLogo">
+            <i class="fa-solid fa-handshake fa-3x"></i>
+            <h2>MarketFlow</h2>
+        </div>
+        <h2 id="form-container-estilo">Crear Cuenta</h2>
+        
+        <form action="login.html">
+            <div class="form-group">
+                <p><i class="fa-solid fa-user"></i> Nombre de Usuario</p>
+                <input type="text" required>
+            </div>
+            <div class="form-group">
+                <p><i class="fa-solid fa-envelope"></i> Correo Electrónico</p>
+                <input type="email" required>
+            </div>
+            <div class="form-group">
+                <p><i class="fa-solid fa-lock"></i> Contraseña</p>
+                <input type="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+
+        <p id="datos">
+            ¿Ya tienes cuenta? <a href="login.html" id="datos-estilo">Inicia sesión aquí</a>
+        </p>
+    </div>
+
+</body>
+</html>
