@@ -1,6 +1,5 @@
 /* =========================================
    1. VARIABLES GLOBALES
-========================================= */
 :root {
     --color-principal: #3498DB;
     --color-secundario: #2ECC71;
@@ -22,7 +21,6 @@
 
 /* =========================================
    2. LAYOUT GENERAL
-========================================= */
 body {
     margin: 0;
     font-family: var(--tipografia-principal);
@@ -44,7 +42,6 @@ body {
 
 /* =========================================
    3. HEADER
-========================================= */
 header {
     background-color: var(--color-fondo-base);
     display: flex;
@@ -117,7 +114,6 @@ header {
 
 /* =========================================
    4. ASIDE / SIDEBAR
-========================================= */
 aside {
     background-color: var(--color-fondo-oscuro);
     color: var(--color-texto-claro);
@@ -156,7 +152,6 @@ aside a:hover {
 
 /* =========================================
    5. ELEMENTOS GENERALES Y UTILIDADES
-========================================= */
 .flexColumna {
     padding: 0;
     margin: 0;
@@ -220,7 +215,6 @@ hr {
 
 /* =========================================
    6. ALERTA FUNCIÓN A FUTURO
-========================================= */
 .alerta-futuro {
     display: none;
     position: fixed;
@@ -244,7 +238,6 @@ hr {
 
 /* =========================================
    7. PANEL: MIS PUBLICACIONES
-========================================= */
 
 /* ----- Grid de productos ----- */
 .grid-productos {
@@ -338,7 +331,6 @@ hr {
 
 /* =========================================
    8. PANEL: DETALLE DE PRODUCTO
-========================================= */
 
 /* ----- Botón volver ----- */
 .btn-volver {
@@ -455,7 +447,6 @@ hr {
 
 /* =========================================
    9. PANEL: CREAR PRODUCTO
-========================================= */
 
 .form-container-largo {
    background: var(--color-fondo-base);
@@ -559,7 +550,6 @@ hr {
 }
 /* =========================================
    9. PANEL: Catalogo
-========================================= */
 .cajaLoginRegistro {
     display: flex;
     gap: 15px;
@@ -660,7 +650,6 @@ hr {
 }
 /* =========================================
    10. PANEL: Mensajes
-========================================= */
 /* Chat */
 .chat-container { display: flex; height: 600px; background: white; border-radius: var(--borde-radio-medium); overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border: 1px solid #eee; }
 .chat-sidebar { width: 320px; border-right: 1px solid #eee; overflow-y: auto; background: #fcfcfc; }
